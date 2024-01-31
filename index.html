@@ -22,8 +22,6 @@
 
     main {
         display: flex;
-        flex-direction: column;
-        align-items: center;
         margin-top: 20px;
     }
 
@@ -31,6 +29,7 @@
         width: 200px;
         height: 200px;
         background-color: #555;
+        border: 2px solid #777;
         border-radius: 10px;
         text-align: center;
         padding: 20px;
@@ -43,16 +42,6 @@
         text-decoration: none;
         color: white;
     }
-
-    section {
-        display: none;
-        max-width: 600px;
-        margin-top: 20px;
-    }
-
-    .box.active + section {
-        display: block;
-    }
 </style>
 </head>
 <body>
@@ -62,42 +51,24 @@
 </header>
 
 <main>
-    <div class="box" onclick="toggleSection(this)">
-        <a href="#about">
+    <div class="box" onclick="window.location.href='about.html'">
+        <a href="about.html">
             <h2>About Me</h2>
         </a>
     </div>
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello, my name is Wyatt Knutsen, and I am currently a senior at Texas State University studying Computer Science.</p>
-    </section>
 
-    <div class="box" onclick="toggleSection(this)">
-        <a href="#education">
+    <div class="box" onclick="window.location.href='education.html'">
+        <a href="education.html">
             <h2>Education</h2>
         </a>
     </div>
-    <section id="education">
-        <h2>Education</h2>
-        <p>Computer Science BS. Relevant coursework includes: Software Engineering, Computer Networks, Systems Security, Object-Oriented Programming. Minor in Applied Math. Relevant coursework includes: Linear Algebra, Calculus II, Discrete Mathematics II, Numerical Analysis</p>
-    </section>
 
-    <div class="box" onclick="toggleSection(this)">
-        <a href="#work">
+    <div class="box" onclick="window.location.href='work.html'">
+        <a href="work.html">
             <h2>Work</h2>
         </a>
     </div>
-    <section id="work">
-        <h2>Work</h2>
-        <p>This is where my future projects will be displayed.</p>
-    </section>
 </main>
-
-<script>
-    function toggleSection(box) {
-        box.classList.toggle("active");
-    }
-</script>
 
 </body>
 </html>
