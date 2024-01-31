@@ -1,50 +1,87 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Pages Website</title>
+    <title>Wyatt Knutsen's Website</title>
     <style>
         body {
+            background-color: #333;
+            color: white;
             font-family: Arial, sans-serif;
-            margin: 20px;
+            margin: 0;
         }
+
         header {
             text-align: center;
             padding: 20px;
-            background-color: #f0f0f0;
         }
+
         main {
-            max-width: 800px;
-            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80vh;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: #555;
+            border-radius: 10px;
+            text-align: center;
+            padding: 20px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
         }
     </style>
 </head>
 <body>
 
 <header>
-    <h1>Welcome to My Website!</h1>
+    <h1>Wyatt Knutsen's Website</h1>
 </header>
 
 <main>
-    <section>
+    <div class="box">
+        <a href="#about">
+            <h2>About Me</h2>
+        </a>
+    </div>
+    <div class="box">
+        <a href="#education">
+            <h2>Education</h2>
+        </a>
+    </div>
+    <div class="box">
+        <a href="#work">
+            <h2>Work</h2>
+        </a>
+    </div>
+
+    <section id="about">
         <h2>About Me</h2>
-        <p>Hello, I'm Wyatt Knutsen. This is my website.</p>
+        <p>Hello my name is Wyatt Knutsen and I am currently a senior at Texas State University studying Computer Science.</p>
     </section>
 
-    <section>
-        <h2>Latest Blog Posts</h2>
-        <ul>
-            <li><a href="#">Post 1: Getting Started with GitHub Pages</a></li>
-            <li><a href="#">Post 2: Customizing Your GitHub Pages Site</a></li>
-            <!-- Add more blog posts as needed -->
-        </ul>
+    <section id="education">
+        <h2>Education</h2>
+        <p>Computer Science BS. Relevant course work includes: Software Engineering, Computer Networks, Systems Security, Object-Oriented Programming.
+        Minor in Applied Math. Relevant course work includes: Linear Algebra, Caclulus II,Discrete Mathamatics II Numerical Analsys</p>
+    </section>
+
+    <section id="work">
+        <h2>Work</h2>
+        <p>This is where my future projects will be displayed.</p>
     </section>
 </main>
 
-<footer>
-    <p>&copy; 2024 My GitHub Pages Website</p>
-</footer>
-
 </body>
+</html>
 </html>
