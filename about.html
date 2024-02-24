@@ -15,16 +15,12 @@
     h1{
         margin-bottom:20 px;
     }
-    embed {
-        display: block;
+    .pdf-container{
+        width:100%;
+        max-width:800px;
         margin: 0 auto;
-        
-        width: 800px; 
-        height: 800px;
     }
     .download-link{
-        display: block;
-        text=align: center:
         margin-top: 20px;
     }
     
@@ -34,8 +30,11 @@
 
 <h1>Resume:</h1>
     
-<embed src="Wyatt Knutsen Resume.pdf" type="application/pdf" >
-    <div class="download-link">
+<div class="pdf-container">
+    <iframe src="Wyatt Knutsen Resume.pdf" width="100%" height="800px" frameborder="0"></iframe>
+
+</div>
+    <div
     <a href="Wyatt Knutsen Resume.pdf" download>Download PDF</a>
 </div>
         
